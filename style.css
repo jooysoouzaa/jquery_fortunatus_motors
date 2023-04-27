@@ -121,7 +121,8 @@ section h2 {
   margin-bottom: 16px;
 }
 
-#sobre-a-loja img, #destaque img,
+#sobre-a-loja img,
+#destaque img,
 #promocoes img {
   border-radius: 6px;
 }
@@ -132,29 +133,34 @@ section h2 {
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 1.125rem;
 }
-.destaque li,.promocoes-lista li {
+.destaque li,
+.promocoes-lista li {
   margin-bottom: 1.125rem;
 }
 
-
-.destaque-lista img, .promocoes-lista img {
+.destaque-lista img,
+.promocoes-lista img {
   transition: transform 0.5s ease;
   margin-bottom: 0.625rem;
 }
 
-.destaque-lista img:hover, .promocoes-lista img:hover {
+.destaque-lista img:hover,
+.promocoes-lista img:hover {
   transform: scale(1.1);
 }
-.destaque-lista h2, .promocoes-lista h2 {
+.destaque-lista h2,
+.promocoes-lista h2 {
   margin-bottom: 0.5rem;
 }
 
-.destaque-lista h2 a, .promocoes-lista h2 a {
+.destaque-lista h2 a,
+.promocoes-lista h2 a {
   color: #50ae9e;
   font-weight: 500;
 }
 
-.destaque-lista p, .promocoes-lista p {
+.destaque-lista p,
+.promocoes-lista p {
   margin-bottom: 0.25rem;
 }
 
@@ -239,7 +245,7 @@ footer li img {
   font-size: 14px;
   color: #ff0000;
 }
-
+/*Responsivo - Mobile*/
 @media screen and (min-width: 641px) and (max-width: 1023px) {
   #sobre-a-loja .container-flex {
     display: block;
@@ -253,14 +259,14 @@ footer li img {
   .container-grid {
     display: block !important;
   }
-  .destaque ul, .promocoes-lista {
-    grid-template-columns: 1fr 1fr; 
-}
+  .destaque ul,
+  .promocoes-lista {
+    grid-template-columns: 1fr 1fr;
+  }
   form {
-    max-width: 100% !important;
+    max-width: 95% !important;
   }
 }
-/*Responsivo - Mobile*/
 
 @media screen and (max-width: 640px) {
   .menu a {
@@ -288,11 +294,12 @@ footer li img {
   .lista-veiculos li {
     max-width: 100% !important;
   }
-  .destaque ul, .promocoes-lista {
+  .destaque ul,
+  .promocoes-lista {
     display: block;
-}
+  }
   form {
-    max-width: 100% !important;
+    max-width: 95% !important;
   }
   footer .container-flex {
     display: block;
