@@ -250,6 +250,9 @@ footer li img {
   #sobre-a-loja .container-flex {
     display: block;
   }
+  #sobre-a-loja img {
+    display: none;
+  }
   section {
     padding: 0 !important;
   }
@@ -279,7 +282,7 @@ footer li img {
     display: block;
   }
   #sobre-a-loja img {
-    max-width: 100% !important;
+    display: none;
   }
   #sobre-a-loja h2 {
     margin-top: 1rem;
