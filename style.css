@@ -4,32 +4,56 @@
   font-family: "IBM Plex Sans", sans-serif;
 }
 
+h1,
+h2,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 html {
   overflow-x: hidden;
 }
+
 .container {
   max-width: 1024px;
-  width: 100%;
   margin: 0 auto;
-}
-header{
-  background: #000000;
-  padding-top: 16px;
-  color: #fff;
+  padding: 1.125rem 2rem;
 }
 
-header{
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1;
+header {
+  background: #000;
 }
 
-header > .container , 
-footer > .container {
-  justify-content: space-between;
+.header {
+  display: flex;
+  margin: 0 auto;
   align-items: center;
-  padding-bottom: 16px;
+  justify-content: space-between;
+}
+
+.menu {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.0625rem;
+}
+
+.menu a {
+  color: #000;
 }
 
 nav {
@@ -65,42 +89,73 @@ nav li a {
   margin-bottom: 5px;
 }
 
-.menu-hamburguer p{
-font-size: 12px;
-text-transform: uppercase;
-color: #78a300;
+.menu-hamburguer p {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #78a300;
 }
 
-span.linha-01{
-    width: 45px;
+span.linha-01 {
+  width: 45px;
 }
 
-span.linha-02{
-    width: 40px;
+span.linha-02 {
+  width: 40px;
 }
 
 .container-flex {
   display: flex;
 }
-#sobre-a-loja img {
-  max-width: 400px;
-  margin-right: 24px;
+
+.container-grid {
+  align-items: start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.125rem;
 }
 section {
-  padding: 48px 0;
+  padding: 30px 0;
 }
 
 section h2 {
   margin-bottom: 16px;
 }
 
-.lista-veiculos {
-  flex-wrap: wrap;
+#sobre-a-loja img, #destaque img,
+#promocoes img {
+  border-radius: 6px;
 }
-.lista-veiculos li {
-  list-style: none;
-  max-width: 30%;
-  margin-bottom: 24px;
+
+.destaque ul,
+.promocoes-lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1.125rem;
+}
+.destaque li,.promocoes-lista li {
+  margin-bottom: 1.125rem;
+}
+
+
+.destaque-lista img, .promocoes-lista img {
+  transition: transform 0.5s ease;
+  margin-bottom: 0.625rem;
+}
+
+.destaque-lista img:hover, .promocoes-lista img:hover {
+  transform: scale(1.1);
+}
+.destaque-lista h2, .promocoes-lista h2 {
+  margin-bottom: 0.5rem;
+}
+
+.destaque-lista h2 a, .promocoes-lista h2 a {
+  color: #50ae9e;
+  font-weight: 500;
+}
+
+.destaque-lista p, .promocoes-lista p {
+  margin-bottom: 0.25rem;
 }
 
 .lista-veiculos img {
@@ -108,10 +163,6 @@ section h2 {
 }
 .lista-veiculos li h3 {
   margin: 16px 0;
-}
-
-.item-central {
-  margin: 0 5%;
 }
 
 button {
@@ -166,22 +217,92 @@ form button {
 }
 
 footer {
-    background: #000;
+  background: #000;
   padding-top: 16px;
   color: #78a300;
-
 }
 
-footer li{
-list-style: none;
-margin-left: 16px;
+footer .container-flex {
+  justify-content: space-between;
+  align-items: center;
 }
 
-footer li img{
-    height: 32px;
+footer li {
+  list-style: none;
+  margin-left: 16px;
 }
-.validate{
+
+footer li img {
+  height: 32px;
+}
+.validate {
   font-size: 14px;
   color: #ff0000;
 }
 
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+  #sobre-a-loja .container-flex {
+    display: block;
+  }
+  section {
+    padding: 0 !important;
+  }
+  section h2 {
+    margin-top: 1rem;
+  }
+  .container-grid {
+    display: block !important;
+  }
+  .destaque ul, .promocoes-lista {
+    grid-template-columns: 1fr 1fr; 
+}
+  form {
+    max-width: 100% !important;
+  }
+}
+/*Responsivo - Mobile*/
+
+@media screen and (max-width: 640px) {
+  .menu a {
+    display: block;
+  }
+  header img {
+    width: 130px;
+  }
+  #sobre-a-loja .container-flex {
+    display: block;
+  }
+  #sobre-a-loja img {
+    max-width: 100% !important;
+  }
+  #sobre-a-loja h2 {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+  }
+  .container-grid {
+    display: block !important;
+  }
+  section {
+    padding: 0 !important;
+  }
+  .lista-veiculos li {
+    max-width: 100% !important;
+  }
+  .destaque ul, .promocoes-lista {
+    display: block;
+}
+  form {
+    max-width: 100% !important;
+  }
+  footer .container-flex {
+    display: block;
+  }
+  footer p {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+  footer li {
+    margin-left: 0px !important;
+    display: inline-block;
+  }
+}

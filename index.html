@@ -17,7 +17,7 @@
 
 <body>
     <header>
-        <div class="container container-flex">
+        <div class=" header container container-flex">
             <img src="/images/logo.svg">
             <div class="menu-hamburguer">
                 <span class="linha-01"></span>
@@ -28,7 +28,7 @@
         </div>
         <nav>
             <div class="container">
-                <ul>
+                <ul class="menu">
                     <li>
                         <a href="#sobre-a-loja">Sobre</a>
                     </li>
@@ -46,6 +46,7 @@
         </nav>
     </header>
     <!--Para fazer slide carousel-->
+    <!--
     <div id="carousel-imagens">
         <img src="./images/slide1.png" alt="Carro da Porsche">
         <img src="./images/slide2.png" alt="Carro da BMW">
@@ -54,9 +55,9 @@
         <img src="./images/slide5.png" alt="Carro da Ford">
         <img src="./images/slide6.png" alt="Carro da Ford">
         <img src="./images/slide7.png" alt="Carro da Ford">
-    </div>
+    </div> -->
     <section id="sobre-a-loja">
-        <div class="container container-flex">
+        <div class="container container-grid">
             <img src="./images/loja.png" alt="Imagem da loja" />
             <div>
                 <h2>Sobre a Fortunatus Motors</h2>
@@ -74,73 +75,64 @@
             </div>
         </div>
     </section>
-    <section id="destaque">
+
+    <section class="destaque" id="destaque">
         <div class="container">
             <h2>Em destaque</h2>
-            <ul class="container-flex lista-veiculos">
+            <ul class="destaque-lista lista-veiculos">
                 <li>
                     <img src="./images/carro01.png" alt="Carro da Porsche" />
                     <h3>Porsche Cayenne</h3>
-                    <p>
-                        Câmbio automático, 4 portas, vidros e travas eletricas.
-                    </p>
+                    <p>Câmbio automático, 4 portas, vidros e travas eletricas.</p>
                     <div class="price">
                         <strong>R$ 629.000,00</strong>
                     </div>
                     <button type="button">Tenho interesse</button>
                 </li>
-                <li class="item-central">
-                    <img src="./images/carro02.png" alt="Carro da BMW" />
+                <li>
+                    <img src="./images/carro02.png" alt="Carro da Porsche" />
                     <h3>Porsche 911 GT3 RS</h3>
-                    <p>
-                        Câmbio automático, 4 portas, vidros e travas eletricas.
-                    </p>
+                    <p>Câmbio automático, 4 portas, vidros e travas eletricas.</p>
                     <div class="price">
                         <strong>R$ 1.769.000,00</strong>
                     </div>
                     <button type="button">Tenho interesse</button>
                 </li>
                 <li>
-                    <img src="./images/carro03.png" alt="Carro da BMW" />
+                    <img src="./images/carro03.png" alt="Carro da Porsche" />
                     <h3>Audi Q8</h3>
-                    <p>
-                        Câmbio automático, 4 portas, vidros e travas eletricas.
-                    </p>
+                    <p>Câmbio automático, 4 portas, vidros e travas eletricas.</p>
                     <div class="price">
                         <strong>R$ 666.990,00</strong>
                     </div>
                     <button type="button">Tenho interesse</button>
                 </li>
                 <li>
-                    <img src="./images/carro04.png" alt="Carro da BMW" />
+                    <img src="./images/carro04.png" alt="Carro da Porsche" />
                     <h3>BMW X5</h3>
-                    <p>
-                        Câmbio automático, 4 portas, vidros e travas eletricas.
-                    </p>
-                    <div class="price">
-                        <strong>R$ 689.950,00</strong>
-                    </div>
-                    <button type="button">Tenho interesse</button>
+                        <p>Câmbio automático, 4 portas, vidros e travas eletricas.</p>
+                        <div class="price">
+                            <strong>R$ 689.950,00</strong>
+                        </div>
+                        <button type="button">Tenho interesse</button>
                 </li>
-                <li class="item-central">
-                    <img src="./images/carro05.png" alt="Carro da BMW" />
-                    <h3>Mercedes-Benz AMG GT</h3>
-                    <p>
-                        Câmbio automático, 4 portas, vidros e travas eletricas.
-                    </p>
-                    <div class="price">
-                        <strong>R$ 1.683.900,00</strong>
-                    </div>
-                    <button type="button">Tenho interesse</button>
+                <li>
+                    <img src="./images/carro05.png" alt="Carro da Porsche" />
+                    <h3>Mercedes-Benz AMG GT</h2>
+                        <p>Câmbio automático, 4 portas, vidros e travas eletricas.</p>
+                        <div class="price">
+                            <strong>R$ 1.683.900,00</strong>
+                        </div>
+                        <button type="button">Tenho interesse</button>
                 </li>
             </ul>
         </div>
     </section>
 
-    <section id="promocoes">
+    <section class="promocoes" id="promocoes">
         <div class="container">
             <h2>Promoções</h2>
-            <ul class="container-flex lista-veiculos">
+            <ul class="promocoes-lista lista-veiculos">
                 <li>
                     <img src="./images/carro06.png" alt="Carro da Porsche" />
                     <h3>Porsche 911 Carrera</h3>
@@ -153,7 +145,7 @@
                     </div>
                     <button type="button">Tenho interesse</button>
                 </li>
-                <li class="item-central">
+                <li>
                     <img src="./images/carro07.png" alt="Carro da Lamborghini" />
                     <h3>Lamborghini Huracán</h3>
                     <p>
