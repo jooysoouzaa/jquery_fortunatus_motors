@@ -116,6 +116,9 @@ section {
 section h2 {
   margin-bottom: 16px;
 }
+.slide{
+  overflow: hidden;
+}
 
 #sobre-a-loja img,
 #destaque img,
