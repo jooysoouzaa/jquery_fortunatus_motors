@@ -60,31 +60,30 @@ $(document).ready(function () {
     );
   });
 
-  // Adicionar o código da API do Google Maps abaixo
+  // Código da API do Google Maps
 
-  // Localização de Perdizes, São Paulo
-  var location = "Perdizes, São Paulo, SP";
+var location = "R. Vinte e Três de Maio, 5 - Anchieta, São Bernardo do Campo, SP";
 
-  // Construir URL do mapa estático
-  var staticMapUrl = "https://maps.googleapis.com/maps/api/staticmap";
-  var staticMapParams = {
-    center: location,
-    zoom: 7,
-    size: "600x300",
-    maptype: "roadmap",
-    key: "AIzaSyDHCnxUmEat472CCggEiDJCNEY-kNpv6i0"
-  };
-  var imageUrl = staticMapUrl + "?" + $.param(staticMapParams);
+// Construir URL do mapa estático
+var staticMapUrl = "https://maps.googleapis.com/maps/api/staticmap";
+var staticMapParams = {
+  center: location,
+  zoom: 10,
+  size: "600x300",
+  maptype: "roadmap",
+  key: "AIzaSyDHCnxUmEat472CCggEiDJCNEY-kNpv6i0" // Substitua pela sua chave da API do Google Maps
+};
+var imageUrl = staticMapUrl + "?" + $.param(staticMapParams);
 
-  // Construir URL do link para o Google Maps
-  var googleMapsUrl = "https://www.google.com/maps/place/Perdizes,+São+Paulo+-+SP";
+// Construir URL do link para o Google Maps
+var googleMapsUrl = "https://www.google.com/maps/dir/?api=1&destination=" + encodeURIComponent(location);
 
-  // Criar o elemento do mapa
-  var $mapImage = $("<img>").attr("src", imageUrl).attr("alt", "Mapa da localização");
+// Criar o elemento do mapa
+var $mapImage = $("<img>").attr("src", imageUrl).attr("alt", "Mapa da localização");
 
-  // Criar o link para o Google Maps
-  var $googleMapsLink = $("<a>").attr("href", googleMapsUrl).attr("target", "_blank").append($mapImage);
+// Criar o link para o Google Maps
+var $googleMapsLink = $("<a>").attr("href", googleMapsUrl).attr("target", "_blank").append($mapImage);
 
-  // Adicionar o mapa ao contêiner
-  $("#google-map").append($googleMapsLink);
+// Adicionar o mapa ao contêiner
+$("#google-map").append($googleMapsLink);
 });
