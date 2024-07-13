@@ -1,0 +1,419 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+/* CONFIGURAÇÕES DA SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020202;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  background: #ff8503;
+  border: 1px solid #020202;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  background: #ff8503;
+  border: 1px solid #020202;
+}
+
+*::selection {
+  color: #020202;
+  background: #ff8503;
+  -webkit-text-fill-color: #020202;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #020202;
+  color: #fff1de;
+}
+
+h1,
+h2,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1.125rem 2rem;
+}
+
+header {
+  background: #020202;
+}
+
+.header {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.0625rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.menu a {
+  color: #020202;
+}
+
+nav {
+  background: #ff8503;
+  display: none;
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+  margin-right: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav li a {
+  color: #020202;
+  text-decoration: none;
+}
+
+.menu-hamburguer {
+  cursor: pointer;
+}
+
+.menu-hamburguer span {
+  height: 4px;
+  width: 30px;
+  background: #ff8503;
+  display: block;
+  margin-bottom: 5px;
+  border-radius: 2px;
+}
+
+.menu-hamburguer p {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ff8503;
+}
+
+h2 span{
+  color: #ff8503;
+}
+
+span.linha-01 {
+  width: 45px;
+}
+
+span.linha-02 {
+  width: 40px;
+}
+
+.container-flex {
+  display: flex;
+}
+
+.container-grid {
+  align-items: start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.125rem;
+}
+section {
+  padding: 30px 0;
+}
+
+section h2 {
+  margin-bottom: 16px;
+}
+.slide{
+  overflow: hidden;
+}
+
+#sobre-a-loja img,
+#destaque img,
+#promocoes img {
+  border-radius: 6px;
+}
+
+.slide img{
+  width: 1920px;
+    height: 390px;
+    object-fit: cover;
+}
+
+.destaque ul,
+.promocoes-lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1.125rem;
+}
+.destaque li,
+.promocoes-lista li {
+  margin-bottom: 1.125rem;
+}
+
+.destaque-lista img,
+.promocoes-lista img {
+  transition: transform 0.5s ease;
+  margin-bottom: 0.625rem;
+}
+
+.destaque-lista img:hover,
+.promocoes-lista img:hover {
+  transform: scale(1.1);
+}
+.destaque-lista h2,
+.promocoes-lista h2 {
+  margin-bottom: 0.5rem;
+}
+
+.destaque-lista h2 a,
+.promocoes-lista h2 a {
+  color: #50ae9e;
+  font-weight: 500;
+}
+
+.destaque-lista p,
+.promocoes-lista p {
+  margin-bottom: 0.25rem;
+}
+
+.lista-veiculos img {
+  max-width: 100%;
+}
+.lista-veiculos li h3 {
+  margin: 16px 0;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  border: none;
+  background: #ff8503;
+  color: #020202;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.price {
+  margin: 16px 0;
+  display: block;
+}
+
+.price del {
+  color: #979797;
+  font-size: 14px;
+}
+.form-campo {
+  margin-bottom: 16px;
+}
+
+.form-campo label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  color: #fff1de;
+}
+.form-campo input, .form-campo textarea {
+  width: 100%;
+  display: block;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ff85035e;
+  background-color: transparent;
+  color: #fff1de;
+  outline: none;
+}
+
+.form-campo input:focus, .form-campo textarea:focus {
+    outline: 1px solid #ff8503; 
+}
+
+
+.form-campo textarea {
+  resize: none;
+  height: 120px;
+}
+
+form {
+  max-width: 90%;
+}
+
+form button {
+  max-width: 120px;
+}
+
+.container-local {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.container-local img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  filter: grayscale(100%); /* Converte a imagem para preto e branco */
+  transition: filter 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.container-local img:hover {
+  filter: grayscale(0%); /* Remove o filtro de preto e branco ao passar o mouse */
+}
+
+.container-local #google-map {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.container-local #google-map img {
+  width: 100%;
+  height: 100%; /* Ou defina uma altura fixa */
+  display: block; /* Certifique-se de que a imagem é exibida corretamente */
+}
+
+footer {
+  background: #020202;
+  padding-top: 16px;
+  color: #ff8503;
+}
+
+footer .container-flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer li {
+  list-style: none;
+  margin-left: 16px;
+}
+
+footer li img {
+  height: 32px;
+}
+.validate {
+  font-size: 14px;
+  color: #ff0000;
+}
+/*Responsivo - Mobile*/
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+  #sobre-a-loja .container-flex {
+    display: block;
+  }
+  #sobre-a-loja img {
+    display: none;
+  }
+  section {
+    padding: 0 !important;
+  }
+  section h2 {
+    margin-top: 1rem;
+  }
+  .container-grid {
+    display: block !important;
+  }
+  .destaque ul,
+  .promocoes-lista {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 767px){
+
+  .container {
+    padding: 15px;
+}
+  .container-local {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+form {
+  max-width: 97%;
+  margin-bottom: 40px;
+}
+}
+
+@media screen and (max-width: 640px) {
+  .menu {
+    text-align: left;
+  }
+  .menu a {
+    display: block;
+  }
+  header img {
+    width: 130px;
+  }
+  #sobre-a-loja .container-flex {
+    display: block;
+  }
+  #sobre-a-loja img {
+    display: none;
+  }
+  #sobre-a-loja h2 {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+  }
+  .container-grid {
+    display: block !important;
+  }
+  section {
+    padding: 0 !important;
+  }
+  .lista-veiculos li {
+    max-width: 100% !important;
+  }
+  .destaque ul,
+  .promocoes-lista {
+    display: block;
+  }
+  footer .container-flex {
+    display: block;
+  }
+  footer p {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+  footer li {
+    margin-left: 0px !important;
+    display: inline-block;
+  }
+}

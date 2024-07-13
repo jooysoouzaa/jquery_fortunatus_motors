@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <meta name="msapplication-navbutton-color" content="#000">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <title>Fortunatus Motors</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class=" header container container-flex">
+            <img src="/images/logo.svg" width="180">
+            <div class="menu-hamburguer">
+                <span class="linha-01"></span>
+                <span class="linha-02"></span>
+                <span></span>
+                <p>Menu</p>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <ul class="menu">
+                    <li>
+                        <a href="#sobre-a-loja">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#destaque">Em destaque</a>
+                    </li>
+                    <li>
+                        <a href="#promocoes">Promoções</a>
+                    </li>
+                    <li>
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Para fazer slide carousel-->
+    <div id="carousel-imagens" class="slide">
+        <img src="./images/slide01.webp" alt="Carro da Porsche" width="1920" height="450">
+        <img src="./images/slide02.webp" alt="Carro da BMW" width="1920" height="450">
+        <img src="./images/slide03.webp" alt="Carro da Ford" width="1920" height="450">
+        <img src="./images/slide04.webp" alt="Carro da Ford" width="1920" height="450">
+        <img src="./images/slide05.webp" alt="Carro da Ford" width="1920" height="450">
+        <img src="./images/slide06.webp" alt="Carro da Ford" width="1920" height="450">
+        <img src="./images/slide07.webp" alt="Carro da Ford" width="1920" height="450">
+    </div>
+    <section id="sobre-a-loja">
+        <div class="container container-grid">
+            <img src="./images/loja.webp" alt="Imagem da loja" />
+            <div>
+                <h2>Sobre a <span>Fortunatus Motors</span></h2>
+                <p>
+                    A Fortunatus Motors é uma empresa especializada na venda de carros de luxo, que está no mercado há
+                    15 anos. Com uma reputação sólida, a empresa tem se destacado pela excelência no atendimento ao
+                    cliente e pela qualidade dos seus produtos.
+                </p>
+                <br>
+                <p>
+                    A empresa oferece uma ampla variedade de carros de luxo, incluindo marcas de renome mundial, como
+                    BMW, Mercedes-Benz, Audi, Porsche, entre outras. Os veículos são cuidadosamente selecionados para
+                    garantir que atendam aos padrões de qualidade exigidos pelos clientes mais exigentes.
+                </p>
+                <br>
+                <p>
+                    Além da venda de carros de luxo, a Fortunatus Motors também oferece serviços de manutenção e
+                    reparação, realizados por profissionais altamente qualificados e com vasta experiência no mercado
+                    automotivo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="destaque" id="destaque">
+        <div class="container">
+            <h2>Em destaque</h2>
+            <ul class="destaque-lista lista-veiculos">
+                <li>
+                    <img src="./images/carro01.webp" alt="Carro da Porsche" />
+                    <h3>Porsche Cayenne</h3>
+                    <p>Câmbio automático, 4 portas, vidros e travas eletricas.</p>
+                    <div class="price">
+                        <strong>R$ 629.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./images/carro02.webp" alt="Carro da Porsche" />
+                    <h3>Porsche 911 GT3 RS</h3>
+                    <p>Câmbio automático, 4 portas, vidros e travas eletricas.</p>
+                    <div class="price">
+                        <strong>R$ 1.769.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./images/carro03.webp" alt="Carro da Porsche" />
+                    <h3>Audi Q8</h3>
+                    <p>Câmbio automático, 4 portas, vidros e travas eletricas.</p>
+                    <div class="price">
+                        <strong>R$ 666.990,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./images/carro04.webp" alt="Carro da Porsche" />
+                    <h3>BMW X5</h3>
+                    <p>Câmbio automático, 4 portas, vidros e travas eletricas.</p>
+                    <div class="price">
+                        <strong>R$ 689.950,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./images/carro05.webp" alt="Carro da Porsche" />
+                    <h3>Mercedes-Benz AMG GT</h2>
+                        <p>Câmbio automático, 4 portas, vidros e travas eletricas.</p>
+                        <div class="price">
+                            <strong>R$ 1.683.900,00</strong>
+                        </div>
+                        <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./images/carro11.webp" alt="Carro da Porsche" />
+                    <h3>Bugatti Centodieci</h2>
+                        <p>Câmbio automático, 4 portas, vidros e travas eletricas.</p>
+                        <div class="price">
+                            <strong>R$ 9.000.000,00</strong>
+                        </div>
+                        <button type="button">Tenho interesse</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="promocoes" id="promocoes">
+        <div class="container">
+            <h2>Promoções</h2>
+            <ul class="promocoes-lista lista-veiculos">
+                <li>
+                    <img src="./images/carro06.webp" alt="Carro da Porsche" />
+                    <h3>Porsche 911 Carrera</h3>
+                    <p>
+                        Câmbio automático, 4 portas, vidros e travas eletricas.
+                    </p>
+                    <div class="price">
+                        <del>R$ 989.000,00</del>
+                        <strong>R$ 890.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./images/carro07.webp" alt="Carro da Lamborghini" />
+                    <h3>Lamborghini Huracán</h3>
+                    <p>
+                        Câmbio automático, 4 portas, vidros e travas eletricas.
+                    </p>
+                    <div class="price">
+                        <del>R$ 5.300.000,00</del>
+                        <strong>R$ 4.770.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./images/carro08.webp" alt="Carro da Audi" />
+                    <h3>Audi A3 Sedan</h3>
+                    <p>
+                        Câmbio automático, 4 portas, vidros e travas eletricas.
+                    </p>
+                    <div class="price">
+                        <del>R$ 275.990,00</del>
+                        <strong>R$ 248.00,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./images/carro09.webp" alt="Carro da Ferrari" />
+                    <h3>Ferrari F8</h3>
+                    <p>
+                        Câmbio automático, 4 portas, vidros e travas eletricas.
+                    </p>
+                    <div class="price">
+                        <del>R$ 3.500.000,00</del>
+                        <strong>R$ 3.100.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="./images/carro10.webp" alt="Carro da McLaren" />
+                    <h3>McLaren 720S</h3>
+                    <p>
+                        Câmbio automático, 4 portas, vidros e travas eletricas.
+                    </p>
+                    <div class="price">
+                        <del>R$ 4.800.000,00</del>
+                        <strong>R$ 4.320.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="./images/carro12.webp" alt="Carro da McLaren" />
+                    <h3>Rimac Nevera</h3>
+                    <p>
+                        Câmbio automático, 4 portas, vidros e travas eletricas.
+                    </p>
+                    <div class="price">
+                        <del>R$ 2.400.000,00</del>
+                        <strong>R$ 1.320.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2>Entre em contato</h2>
+            <div class="container-local">
+                <form>
+                    <div class="form-campo">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="nome" name="nome">
+                    </div>
+                    <div class="form-campo">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone">
+                    </div>
+                    <div class="form-campo">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-campo">
+                        <label for="veiculo-interesse">Veiculo de Interesse:</label>
+                        <input type="text" id="veiculo-interesse" name="veiculoDeInteresse">
+                    </div>
+                    <div class="form-campo">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem"></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+
+                <!-- <img src="./images/localizacao.webp" alt="Carro da Lamborghini" /> -->
+                <div id="google-map">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container container-flex">
+            <p> 2023 &copy; Fortunatus Motors - Todos os direitos reservados</p>
+            <ul class="container-flex">
+                <li>
+                    <a href="#">
+                        <img src="./icones/facebook.svg" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./icones/instagram.svg" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./icones/youtube.svg" alt="Youtube"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
