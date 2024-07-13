@@ -8,9 +8,11 @@ Além dessas funcionalidades, integrei a API do Google Maps para exibir a locali
 
 Este projeto destaca a aplicação prática de jQuery para melhorar a interatividade e a usabilidade de páginas web, combinando elementos visuais atraentes com funcionalidades úteis e integrativas.<br>
 
+Veja o projeto: https://fortunatusmotors.vercel.app/
+
 ![img-projeto-fortunatus-motors](https://github.com/user-attachments/assets/216382b2-162a-46d1-8f4e-fbeafb4f2eae)
 
 
-Veja o projeto: https://fortunatusmotors.vercel.app/
+
 
 
