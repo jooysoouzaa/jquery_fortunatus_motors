@@ -78,6 +78,21 @@ header {
   justify-content: space-between;
 }
 
+.menu-header li {
+  color: #fff1de;
+  list-style: none;
+  display: inline;
+  margin-right: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu-header li a{
+  font-size: 16px;
+  color: #fff1de;
+}
+
 .menu {
   display: block;
   text-transform: uppercase;
@@ -334,6 +349,18 @@ footer li img {
   color: #ff0000;
 }
 /*Responsivo - Mobile*/
+
+@media screen  and (min-width: 1024px){
+  .menu-hamburguer{
+    display: none;
+  }
+}
+
+@media  only screen and (max-width: 1023px) {
+  .menu-header{
+    display: none;
+  }
+}
 @media screen and (min-width: 641px) and (max-width: 1023px) {
   #sobre-a-loja .container-flex {
     display: block;
